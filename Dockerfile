@@ -23,7 +23,7 @@ RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 USER appuser:appgroup
 
 # Copy artifact from builder stage
-COPY --from=builder /build/target/ecommerce-0.0.1-SNAPSHOT.jar app.jar
+COPY --from=builder /build/target/omnigrocer-0.0.1-SNAPSHOT.jar app.jar
 
 EXPOSE 8080
 
